@@ -3,61 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal dos Super-Heróis 🚀</title>
+    <title>Portal Jovens Titãs - Início</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a2e;
-            color: #ffffff;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #e94560;
-            font-size: 2.5rem;
-        }
-        p {
-            color: #0f3460;
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        ul {
-            list-style-type: none;
+            font-family: Arial, sans-serif;
+            background-color: #0b0f17;
+            color: #e2e8f0;
+            margin: 0;
             padding: 0;
-            max-width: 400px;
-            margin: 0 auto;
         }
-        li {
-            background-color: #16213e;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #0f3460;
-            transition: transform 0.2s;
+
+        /* Cabeçalho Principal */
+        header {
+            background: linear-gradient(135deg, #1e1b4b, #311042);
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 4px solid #7c3aed;
         }
-        li:hover {
-            transform: scale(1.05);
-            border-color: #e94560;
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #ffffff;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
-        a {
-            color: #4ecc71;
+
+        header p {
+            color: #a78bfa;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Container dos Cards */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .subtitulo-secao {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .grid-herois {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        /* Card de Cada Herói */
+        .card-heroi {
+            background-color: #161b26;
+            border: 2px solid #2d3748;
+            border-radius: 12px;
+            width: 260px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card-heroi:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-heroi h2 {
+            margin-top: 0;
+            font-size: 1.6em;
+        }
+
+        .card-heroi p {
+            color: #94a3b8;
+            font-size: 0.95em;
+            height: 60px; /* Alinha o texto dos cards */
+        }
+
+        /* ESTILO DOS BOTÕES DE NAVEGAÇÃO (A HREF) */
+        .btn-perfil {
+            display: block;
+            text-align: center;
+            color: #ffffff;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
-            display: block;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Cores customizadas dos botões de cada herói */
+        .ciborgue { background-color: #0088cc; }
+        .ciborgue:hover { background-color: #00aaff; box-shadow: 0 0 12px #00aaff; }
+
+        .mutano { background-color: #15803d; }
+        .mutano:hover { background-color: #16a34a; box-shadow: 0 0 12px #16a34a; }
+
+        .robin { background-color: #b91c1c; }
+        .robin:hover { background-color: #dc2626; box-shadow: 0 0 12px #dc2626; }
+
+        .ravena { background-color: #6b21a8; }
+        .ravena:hover { background-color: #8b5cf6; box-shadow: 0 0 12px #8b5cf6; }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #475569;
+            font-size: 0.9em;
+            border-top: 1px solid #1e293b;
+            margin-top: 60px;
         }
     </style>
 </head>
 <body>
 
-    <h1>🚀 Portal Multiverso dos Super-Heróis</h1>
-    <p>Selecione um herói abaixo para conhecer seus poderes e história:</p>
+    <!-- Topo do Portal -->
+    <header>
+        <h1>Torre dos Titãs</h1>
+        <p>Selecione um herói para acessar o banco de dados oficial</p>
+    </header>
 
-    <!-- ATENÇÃO ALUNOS: Vocês devem adicionar o link do seu herói DENTRO desta lista <ul> abaixo -->
-    <ul id="lista-herois">
-        <!-- O conflito vai acontecer aqui quando todos tentarem colar suas linhas ao mesmo tempo -->
-        <!-- cwJrhhJYf83rVVhrih30qi7bSrLNOr0wOSO  -->
-    </ul>
+    <!-- Grid com os Heróis -->
+    <main>
+        <h2 class="subtitulo-secao">Integrantes da Equipe</h2>
+        
+        <div class="grid-herois">
+
+            <!-- Card: Ciborgue -->
+            <div class="card-heroi" style="border-color: #0088cc;">
+                <h2 style="color: #00aaff;">Ciborgue</h2>
+                <p>Metade homem, metade robô e o engenheiro mecânico oficial do grupo.</p>
+                <!-- Botão a href apontando para a página dele -->
+                <a class="btn-perfil ciborgue" href="ciborg.html">Ver Perfil</a>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Banco de Dados da Torre dos Titãs. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
