@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Choque - O Herói de Dakota</title>
+    <style>
+        /* Estilos Gerais e Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Menu de Navegação */
+        header {
+            background-color: #1f2833;
+            border-bottom: 4px solid #ffcc00;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+
+        .logo span {
+            color: #00d2ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Seção Hero (Banner Principal) */
+        .hero {
+            background: linear-gradient(rgba(11, 12, 16, 0.8), #0b0c10), url('https://alphacoders.com') no-repeat center center/cover;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid #00d2ff;
+        }
+
+        /* Foto do Super Herói no Topo */
+        .hero-img {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 15px rgba(0, 210, 255, 0.8));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        /* Seções de Conteúdo */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            scroll-margin-top: 100px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #00d2ff;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Grid de Poderes e Detalhes */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #1f2833;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #ffcc00;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+        }
+
+        .card h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1f2833;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 4px solid #00d2ff;
+            color: #c5a100;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 15px;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero-img {
+                width: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e Menu -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Super <span>Choque</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#poderes">Poderes</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal com a Imagem do Herói -->
+    <div class="hero">
+        <!-- Tag de Imagem Oficial Adicionada -->
+        <!-- Tag atualizada para puxar a imagem que você baixou -->
+<img class="hero-img" src="super-choque.jpg" alt="Super Choque">
+        <h1>Virgil Hawkins</h1>
+        <p>Ele vai soltar um choque no seu sistema! Conheça a história e as habilidades de um dos maiores heróis da Milestone e da DC Comics.</p>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+
+        <!-- Seção: História -->
+        <section id="historia">
+            <h2>História do Herói</h2>
+            <p>Criado originalmente por Dwayne McDuffie, Denys Cowan, Michael Davis e Derek T. Dingle na <strong>Milestone Media</strong> em 1993, Virgil Hawkins era um adolescente comum de 14 anos vivendo na cidade de Dakota. Tudo mudou quando ele foi pego de surpresa no meio de uma guerra de gangues e acabou exposto a um gás mutagênico experimental, um evento marcante conhecido como o <strong>"Big Bang"</strong>.</p>
+            <br>
+            <p>Esse gás alterou sua estrutura celular, concedendo-lhe habilidades eletromagnéticas extraordinárias. Inspirado por gibis e querendo fazer a diferença em sua comunidade contra outros mutantes que usavam seus novos poderes para o crime (os chamados "Meta-Humanos"), Virgil assumiu a identidade de <strong>Super Choque</strong> (Static Shock). Anos mais tarde, o universo de Dakota se fundiu ao universo principal da DC Comics, permitindo que ele lutasse ao lado dos Jovens Titãs e da Liga da Justiça.</p>
+        </section>
+
+        <!-- Seção: Poderes -->
+        <section id="poderes">
+            <h2>Poderes e Habilidades</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Manipulação Eletromagnética</h3>
+                    <p>Capacidade de gerar, absorver e controlar energia elétrica e campos magnéticos à sua vontade.</p>
+                </div>
+                <div class="card">
+                    <h3>Voo com Disco Magnético</h3>
+                    <p>Utilizando tampas de bueiro ou seu famoso disco metálico retrátil, Virgil consegue magnetizar objetos para voar e planar em alta velocidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Corte e Solda de Metais</h3>
+                    <p>Ele consegue concentrar sua energia elétrica para derreter, cortar ou soldar estruturas metálicas com extrema precisão.</p>
+                </div>
+                <div class="card">
+                    <h3>Intercepção de Sinais</h3>
+                    <p>O Super Choque consegue ouvir e rastrear ondas de rádio, linhas telefônicas e sinais de internet usando sua bioeletricidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Curiosidades -->
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sucesso Estrondoso no Brasil</h3>
+                    <p>O herói ganhou o coração dos brasileiros nos anos 2000 por causa da exibição em massa de sua série animada na TV aberta, tornando-se um ícone da cultura pop no país.</p>
+                </div>
+                <div class="card">
+                    <h3>Homenagem Científica</h3>
+                    <p>O nome civil do herói, <em>Virgil Hawkins</em>, é uma homenagem direta a um advogado afro-americano real que lutou pelo direito de pessoas negras ingressarem nas faculdades de Direito na Flórida.</p>
+                </div>
+                <div class="card">
+                    <h3>Resistência Mental</h3>
+                    <p>Devido à alta atividade elétrica em seu cérebro, a mente de Virgil é incrivelmente difícil de ser lida ou controlada por telepatas.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Site de Fã criado para homenagear o Super Choque. Todos os direitos de imagem e personagem pertencem à DC Comics / Milestone Media.</p>
+    </footer>
+
+</body>
+</html>
