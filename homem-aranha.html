@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homem-Aranha - O Espetacular</title>
+    <style>
+        :root {
+            --vermelho-aranha: #d92027;
+            --azul-aranha: #1a4b84;
+            --fundo-escuro: #0b0c10;
+            --texto-claro: #c5c6c7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--fundo-escuro);
+            color: var(--texto-claro);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--vermelho-aranha), #800f14);
+            color: #ffffff;
+            border-bottom: 5px solid var(--azul-aranha);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .imagem-destaque {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .imagem-destaque img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 12px;
+            border: 3px solid var(--vermelho-aranha);
+            box-shadow: 0 10px 25px rgba(217, 32, 39, 0.3);
+        }
+
+        .card {
+            background-color: #1f2833;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            border-left: 6px solid var(--azul-aranha);
+        }
+
+        h2 {
+            color: #66fcf1;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .poderes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .poder-item {
+            background-color: #0b0c10;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #45a29e;
+        }
+
+        .poder-item h3 {
+            color: var(--vermelho-aranha);
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+
+        .voltar {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .voltar a {
+            background-color: var(--azul-aranha);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .voltar a:hover {
+            background-color: #266dd3;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b0c10;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #1f2833;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🕷️ Homem-Aranha</h1>
+        <p>O protetor de Nova York</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Cole a URL da sua imagem no atributo src abaixo -->
+        <div class="imagem-destaque">
+            <img src="c:\Users\ALESSANDRAMELLOCARDO\Downloads\868_cgs9hajvkre1u0tat74gx.jpg" alt="Homem-Aranha">
+        </div>
+
+        <div class="card">
+            <h2>A Origem</h2>
+            <p>Peter Parker era um estudante brilhante e solitário até que, durante uma exibição científica, foi picado por uma aranha radioativa. Esse incidente mudou sua vida para sempre, dotando-o de habilidades incríveis. Após uma tragédia pessoal causada por sua própria negligência inicial, ele aprendeu a valiosa lição de que <strong>com grandes poderes vêm grandes responsabilidades</strong>.</p>
+        </div>
+
+        <div class="card">
+            <h2>Poderes e Habilidades Espetaculares</h2>
+            
+            <div class="poderes-grid">
+                <div class="poder-item">
+                    <h3>💪 Força Proporcional</h3>
+                    <p>Possui a força física equivalente à de uma aranha em proporção ao seu tamanho, permitindo erguer veículos pesados.</p>
+                </div>
+
+                <div class="poder-item">
+                    <h3>⚡ Sentido de Aranha</h3>
+                    <p>Um sistema de alerta precoce baseado em reflexos que o avisa de perigos iminentes antes mesmo que eles aconteçam.</p>
+                </div>
+
+                <div class="poder-item">
+                    <h3>🏃 Agilidade e Reflexos</h3>
+                    <p>Velocidade, equilíbrio e flexibilidade sobre-humanas que superam os limites de qualquer atleta comum.</p>
+                </div>
+
+                <div class="poder-item">
+                    <h3>🧱 Aderência Física</h3>
+                    <p>Capacidade de controlar o fluxo eletrostático entre seu corpo e superfícies, permitindo andar pelas paredes e tetos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="voltar">
+            <a href="index.html">⬅️ Voltar para o Portal dos Heróis</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Universo Marvel / Projeto Multiverso</p>
+    </footer>
+
+</body>
+</html>
