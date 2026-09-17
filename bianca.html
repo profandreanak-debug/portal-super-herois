@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Espetacular Homem-Aranha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            background-color: #8b0000;
+            /* Fundo vermelho escuro com padrão de teias e aranhas em SVG */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M50 0 L50 100 M0 50 L100 50 M0 0 L100 100 M100 0 L0 100 M50 25 Q35 35 25 50 Q35 65 50 75 Q65 65 75 50 Q65 35 50 25 Z M50 10 Q25 25 10 50 Q25 75 50 90 Q75 75 90 50 Q75 25 50 10 Z' stroke='%23000000' stroke-width='1' fill='none' opacity='0.35'/%3E%3Ccircle cx='50' cy='50' r='3' fill='%23000000' opacity='0.5'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            background-color: rgba(15, 15, 15, 0.92);
+            border: 3px solid #ff0000;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.4);
+            padding: 30px;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ff3333;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        header p {
+            font-style: italic;
+            color: #cccccc;
+            margin-top: 5px;
+        }
+
+        .conteudo-principal {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .coluna-foto {
+            flex: 1;
+            min-width: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .coluna-foto img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #000000;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .coluna-foto img:hover {
+            transform: scale(1.02);
+        }
+
+        .coluna-info {
+            flex: 1.5;
+            min-width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .bloco-info {
+            background-color: rgba(30, 30, 30, 0.6);
+            border-left: 5px solid #ff0000;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .bloco-info h2 {
+            font-size: 1.4rem;
+            color: #ff3333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+            padding-bottom: 5px;
+        }
+
+        .bloco-info ul {
+            list-style: none;
+        }
+
+        .bloco-info ul li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .bloco-info ul li strong {
+            color: #ff6666;
+        }
+
+        .bloco-info p {
+            line-height: 1.6;
+            color: #dddddd;
+            text-align: justify;
+        }
+
+        /* Responsividade para telas menores (celulares) */
+        @media (max-width: 768px) {
+            .conteudo-principal {
+                flex-direction: column;
+            }
+            .coluna-foto {
+                order: -1; /* Mantém a foto no topo em telas de celular */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>O Espetacular Homem-Aranha</h1>
+            <p>"Com grandes poderes vêm grandes responsabilidades."</p>
+        </header>
+
+        <div class="conteudo-principal">
+            <!-- Lado Esquerdo: Imagem enviada -->
+            <div class="coluna-foto">
+                <img src="homem-aranha.webp" alt="Peter Parker - Homem-Aranha">
+            </div>
+
+            <!-- Lado Direito: Informações e Características -->
+            <div class="coluna-info">
+                
+                <div class="bloco-info">
+                    <h2>Dados Pessoais</h2>
+                    <ul>
+                        <li><strong>Identidade Secreta:</strong> Peter Benjamin Parker</li>
+                        <li><strong>Ocupação:</strong> Estudante, Fotógrafo Freelancer e Vigilante</li>
+                        <li><strong>Afiliação:</strong> Versões Alternativas do Homem-Aranha (Aranhaverso)</li>
+                        <li><strong>Base de Operações:</strong> Queens, Nova York</li>
+                    </ul>
+                </div>
+
+                <div class="bloco-info">
+                    <h2>Características e Poderes</h2>
+                    <ul>
+                        <li><strong>Força e Agilidade Sobre-humanas:</strong> Capacidade de erguer toneladas e realizar acrobacias impossíveis para humanos comuns.</li>
+                        <li><strong>Sentido Aranha:</strong> Um sexto sentido precognitivo que o avisa instantaneamente sobre perigos iminentes.</li>
+                        <li><strong>Adesão a Superfícies:</strong> Habilidade física de escalar paredes, tetos e superfícies verticais com extrema facilidade.</li>
+                        <li><strong>Fluido e Lançadores de Teia:</strong> Desenvolvidos mecanicamente pelo próprio Peter utilizando tecnologia de fios de biocabo da Oscorp.</li>
+                        <li><strong>Intelecto Genial:</strong> Exímio conhecimento em ciência, física e química.</li>
+                    </ul>
+                </div>
+
+                <div class="bloco-info">
+                    <h2>Histórico Breve</h2>
+                    <p>
+                        Após ser picado por uma aranha geneticamente modificada nos laboratórios da Oscorp, o jovem cientista Peter Parker adquire habilidades extraordinárias. Marcado pela trágica perda de seu tio Ben, ele decide usar seus poderes para proteger as ruas de Nova York contra ameaças letais, conciliando a vida de um herói incompreendido com os dilemas emocionais da juventude.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
