@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Super-Herói: Batman</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121214;
+            color: #e1e1e6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            background-color: #202024;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            border: 1px solid #323238;
+        }
+        .hero-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 24px;
+        }
+        h1 {
+            color: #fff;
+            margin-top: 0;
+            font-size: 2rem;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 8px;
+        }
+        .alter-ego {
+            font-style: italic;
+            color: #a8a8b3;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #ffcc00;
+            font-size: 1.2rem;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        p {
+            line-height: 1.6;
+            color: #c4c4cc;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            background-color: #121214;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+        .stat-item strong {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Imagem do Super-Herói -->
+        <img class="hero-img" src="https://unsplash.com" alt="Silhueta sombria de um herói na noite">
+        
+        <div class="content">
+            <!-- Nome e Identidade -->
+            <h1>Batman</h1>
+            <p class="alter-ego"><strong>Alter Ego:</strong> Bruce Wayne</p>
+            
+            <!-- Biografia rápida -->
+            <h2>História</h2>
+            <p>Após presenciar a perda de seus pais quando criança, o bilionário Bruce Wayne viajou pelo mundo para treinar seu corpo e mente ao limite absoluto. Ao retornar para sua cidade natal, Gotham City, ele assumiu a identidade de Batman para combater o crime e trazer justiça às ruas escuras.</p>
+            
+            <!-- Características e Dados -->
+            <h2>Características Físicas e Gerais</h2>
+            <div class="stats">
+                <div class="stat-item"><strong>Base de Operações:</strong> Gotham City</div>
+                <div class="stat-item"><strong>Primeira Aparição:</strong> 1939</div>
+                <div class="stat-item"><strong>Altura:</strong> 1,88 m</div>
+                <div class="stat-item"><strong>Peso:</strong> 95 kg</div>
+                <div class="stat-item"><strong>Olhos:</strong> Azuis</div>
+                <div class="stat-item"><strong>Cabelo:</strong> Preto</div>
+            </div>
+
+            <!-- Habilidades / Poderes -->
+            <h2>Poderes e Habilidades</h2>
+            <ul>
+                <li><strong>Intelecto de Nível Gênio:</strong> Considerado o maior detetive do mundo.</li>
+                <li><strong>Mestre em Artes Marciais:</strong> Domina dezenas de estilos de combate corpo a corpo.</li>
+                <li><strong>Pico da Condição Humana:</strong> Força, agilidade e resistência no limite máximo do que um humano consegue atingir.</li>
+                <li><strong>Arsenal Tecnológico:</strong> Uso de equipamentos avançados como o Batmóvel, Batarangues e trajes blindados.</li>
+                <li><strong>Recursos Financeiros:</strong> Acesso à fortuna ilimitada das Indústrias Wayne.</li>
+            </ul>
+
+            <!-- Principais Aliados e Inimigos -->
+            <h2>Círculo de Relações</h2>
+            <ul>
+                <li><strong>Aliados:</strong> Alfred Pennyworth, Robin, Comissário Gordon, Batgirl, Liga da Justiça.</li>
+                <li><strong>Arqui-inimigos:</strong> Coringa, Charada, Pinguim, Mulher-Gato, Bane.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
