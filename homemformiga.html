@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiê Avançado: Homem-Formiga (Scott Lang)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #66fcf1;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 3px;
+            background-color: #ff3333;
+            box-shadow: 0 0 15px #ff3333;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+        }
+
+        header p {
+            color: #ff3333;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        /* Seção da Imagem do Herói */
+        .hero-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            width: 450px;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #ff3333;
+            box-shadow: 0 0 25px rgba(255, 51, 51, 0.4);
+            transition: transform 0.5s ease;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.03);
+        }
+
+        @media (min-width: 768px) {
+            .grid-dois-campos {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+        }
+
+        .card {
+            background-color: #1f2833;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid #45a29e;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff3333;
+        }
+
+        .card-destaque {
+            border-left: 6px solid #ff3333;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: #ff3333;
+            margin: 15px 0 8px 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #e5e5e5;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "◢";
+            color: #ff3333;
+            font-size: 0.8rem;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        strong {
+            color: #66fcf1;
+        }
+
+        .badge-status {
+            background-color: #ff3333;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #45a29e;
+            font-size: 0.85rem;
+            border-top: 1px solid #1f2833;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dossiê Técnico: Homem-Formiga</h1>
+        <p>Acesso Restrito // Arquivos de Dados das Indústrias Pym</p>
+    </header>
+
+    <div class="container">
+
+<!-- Mude a tag da imagem para essa versão com .jpg duplo: -->
+<div class="hero-image-container">
+    <img src="homem.formiga.jpg.jpg" alt="Homem-Formiga, Scott Lang e Hank Pym" class="hero-image">
+</div>
+
+
+
+
+        <!-- Visão Geral -->
+        <section class="card card-destaque">
+            <span class="badge-status">Status: Ativo nas Indústrias Pym & Vingadores</span>
+            <h2>👤 Identidade e Perfil Comercial</h2>
+            <p><strong>Nome Verdadeiro:</strong> Scott Edward Harris Lang</p>
+            <p><strong>Profissão Original:</strong> Engenheiro Eletrônico (mestre em Engenharia Elétrica).</p>
+            <p><strong>Resumo Biográfico:</strong> Scott não possui superpoderes biológicos ou mutações. Sua capacidade de alterar de tamanho e interagir com insetos vem exclusivamente do uso genial da engenharia reversa e do domínio sobre as revolucionárias Partículas Pym.</p>
+        </section>
+
+        <div class="grid-dois-campos">
+            <!-- Origem -->
+            <section class="card">
+                <h2>🧬 Como se Tornou Herói</h2>
+                <p>Scott Lang era um pai de família desesperado e um mestre da engenharia que acabou preso por cometer um roubo estilo "Robin Hood" para expor uma corporação corrupta.</p>
+                <p>Após sair da prisão, incapaz de conseguir emprego e precisando de dinheiro para garantir o direito de visitar sua filha, Cassie Lang, ele cedeu à tentação e planejou um último roubo na casa do cientista recluso <strong>Hank Pym</strong>.</p>
+                <p>Lá dentro, encontrou o protótipo do traje. Ao testá-lo, descobriu o poder de encolher. O que Scott não sabia é que tudo havia sido uma armação de Hank Pym, que o testou para ver se ele era audacioso e habilidoso o suficiente para herdar o manto do Homem-Formiga e proteger a fórmula secreta contra ameaças militares.</p>
+            </section>
+
+            <!-- Habitação -->
+            <section class="card">
+                <h2>📍 Onde Ele Mora e Opera</h2>
+                <h3>Residência em San Francisco</h3>
+                <p>Scott mantém uma residência estável em <strong>San Francisco, Califórnia</strong>, onde vive perto de sua filha Cassie. É uma típica área urbana de ladeiras, onde ele tenta manter a fachada de um cidadão comum.</p>
+                
+                <h3>O Laboratório Portátil de Pym</h3>
+                <p>Sua verdadeira base de operações técnica é o laboratório de Hank Pym. Graças às partículas de alteração de massa, este enorme complexo científico de múltiplos andares pode ser encolhido até o tamanho de uma <strong>mala de viagem de rodinhas</strong> e transportado para qualquer lugar do mundo instantaneamente.</p>
+
+                <h3>O Reino Quântico</h3>
+                <p>Considerado sua "segunda casa" involuntária. Um micro-universo subatômico localizado abaixo do espaço-tempo unconventional, onde as leis da física e do tempo deixam de fazer sentido.</p>
+            </section>
+        </div>
+
+        <!-- Traje Detalhado -->
+        <section class="card">
+            <h2>🛡️ Especificações do Uniforme Tático</h2>
+            <p>O traje do Homem-Formiga é uma obra-prima da engenharia que isola o corpo do usuário contra os efeitos mortais da mudança de densidade molecular.</p>
+            
+            <ul>
+                <li><strong>Malha de Compressão Adaptativa:</strong> Feita de couro sintético reforçado com polímeros escuros e vermelhos. O tecido expande e contrai em nível atômico sem rasgar, protegendo o usuário de fricção extrema.</li>
+                <li><strong>Capacete Hermético de Fluxo de Ar:</strong> Uma peça de isolamento total. Quando ativo, o capacete fornece oxigênio purificado pressurizado, pois os pulmões humanos não conseguem respirar moléculas de oxigênio normais quando estão encolhidos.</li>
+                <li><strong>Transmissor Electro-Cibernético EMP:</strong> Antenas embutidas no capacete que geram ondas de rádio modificadas. Elas estimulam os sistemas olfativos e as feromonas de insetos, permitindo que Scott dê ordens complexas e controle exércitos de formigas (como as carpinteiras, cortadeiras e de fogo).</li>
+                <li><strong>Manoplas Reguladoras de Partículas:</strong> Botões acoplados nas palmas das mãos. O botão direito libera a fórmula vermelha (encolhimento imediato e aumento de densidade). O botão esquerdo ativa a fórmula azul (expansão massiva para transformar-se no Gigante de até 20 metros).</li>
+            </ul>
+        </section>
+
+        <!-- Comportamento em Batalha -->
+        <section class="card card-destaque">
+            <h2>⚔️ Comportamento e Estratégia em Batalha</h2>
+            <p>Ao contrário de heróis que usam força bruta pura (como o Hulk), o Homem-Formiga é um combatente altamente tático, imprevisível e que usa a física e a distração a seu favor.</p>
+            
+            <h3>Estilo de Luta Dinâmico</h3>
+            <p>Scott altera seu tamanho constantemente no meio de uma sequência de golpes. Ele pode sumir do campo de visão do inimigo no milissegundo em que o adversário tenta desferir um soco e reaparecer instantes depois em tamanho normal desferindo um gancho.</p>
+
+            <h3>Física de Alta Densidade (O Soco da Formiga)</h3>
