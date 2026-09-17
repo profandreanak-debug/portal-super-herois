@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homem-Aranha | Ficha Técnica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #e62429, #b11313);
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #ffcccc;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        /* Área da Imagem Única */
+        .secao-imagem {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .secao-imagem img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #e62429;
+            box-shadow: 0 4px 15px rgba(230, 36, 41, 0.3);
+        }
+
+        /* Ficha Técnica */
+        .ficha-tecnica {
+            flex: 1 1 400px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 1.5rem;
+            border-left: 5px solid #e62429;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .ficha-tecnica h2 {
+            color: #e62429;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .ficha-item {
+            margin-bottom: 0.8rem;
+        }
+
+        .ficha-item strong {
+            color: #00b4d8;
+        }
+
+        .ficha-item ul {
+            margin-left: 1.2rem;
+            margin-top: 0.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #0a0a0a;
+            margin-top: 3rem;
+            border-top: 1px solid #222;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Homem-Aranha</h1>
+        <p>"Com grandes poderes vêm grandes responsabilidades."</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- Área reservada para a SUA imagem -->
+        <div class="secao-imagem">
+            <img src="miranha.webp" alt="Homem-Aranha">
+        </div>
+
+        <!-- Ficha Técnica -->
+        <aside class="ficha-tecnica">
+            <h2>Ficha Técnica</h2>
+            <div class="ficha-item">
+                <strong>Nome Real:</strong> Peter Benjamin Parker
+            </div>
+            <div class="ficha-item">
+                <strong>Espécie:</strong> Humano Mutacionado
+            </div>
+            <div class="ficha-item">
+                <strong>Afiliações:</strong> Vingadores, Quarteto Fantástico
+            </div>
+            <div class="ficha-item">
+                <strong>Primeira Aparição:</strong> Amazing Fantasy #15 (1962)
+            </div>
+            <div class="ficha-item">
+                <strong>Criadores:</strong> Stan Lee e Steve Ditko
+            </div>
+            <div class="ficha-item">
+                <strong>Base de Operações:</strong> Nova York, EUA
+            </div>
+            <div class="ficha-item">
+                <strong>Habilidades principais:</strong>
+                <ul>
+                    <li>Força e agilidade sobre-humanas</li>
+                    <li>Sentido de aranha (premonição de perigo)</li>
+                    <li>Capacidade de se fixar em superfícies</li>
+                    <li>Intelecto de nível genius</li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Página sobre o Homem-Aranha — Marvel Comics</p>
+    </footer>
+
+</body>
+</html>
