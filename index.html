@@ -3,59 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal dos Super-Heróis 🚀</title>
+    <title>Portal do Batman - O Cavaleiro das Trevas 🦇</title>
     <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-bg: #1f2833;
+            --text-main: #c5c6c7;
+            --accent-yellow: #f0c300;
+            --accent-dark: #45a29e;
+            --bat-black: #000000;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a2e;
-            color: #ffffff;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             text-align: center;
-            padding: 50px;
+            padding: 30px;
+            margin: 0;
         }
-        h1 {
-            color: #e94560;
+
+        /* Estilo da Logo do Morcego em CSS */
+        .bat-logo-container {
+            margin: 20px auto;
+            width: 120px;
+            height: 60px;
+            position: relative;
+        }
+
+        .bat-logo {
+            width: 100px;
+            height: 50px;
+            background-color: var(--accent-yellow);
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(240, 195, 0, 0.4);
+            position: relative;
+        }
+
+        .bat-logo::before {
+            content: "🦇";
             font-size: 2.5rem;
+            position: absolute;
+            top: -2px;
         }
-        p {
-            color: #0f3460;
+
+        h1 {
+            color: var(--accent-yellow);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .subtitle {
+            color: #8892b0;
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
-        ul {
+
+        /* Seção de Informações Detalhadas do Batman */
+        .batman-info {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #2c3848;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .batman-info h3 {
+            color: var(--accent-yellow);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-yellow);
+            padding-bottom: 5px;
+        }
+
+        .batman-info p, .batman-info li {
+            color: var(--text-main);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .batman-info ul {
+            padding-left: 20px;
+            list-style-type: square;
+            max-width: none;
+            margin: 10px 0;
+        }
+
+        .batman-info li {
+            background: none;
+            border: none;
+            padding: 4px 0;
+            margin: 0;
+        }
+
+        .batman-info li:hover {
+            transform: none;
+            border-color: transparent;
+        }
+
+        /* Lista de links de heróis original modificada para a paleta */
+        ul#lista-herois {
             list-style-type: none;
             padding: 0;
             max-width: 400px;
             margin: 0 auto;
         }
-        li {
-            background-color: #16213e;
+
+        ul#lista-herois li {
+            background-color: var(--card-bg);
             margin: 10px 0;
             padding: 15px;
             border-radius: 8px;
-            border: 1px solid #0f3460;
-            transition: transform 0.2s;
+            border: 1px solid #2c3848;
+            transition: transform 0.2s, border-color 0.2s;
         }
-        li:hover {
+
+        ul#lista-herois li:hover {
             transform: scale(1.05);
-            border-color: #e94560;
+            border-color: var(--accent-yellow);
         }
+
         a {
-            color: #4ecc71;
+            color: var(--accent-yellow);
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
             display: block;
         }
+        
+        a:hover {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
 
-    <h1>🚀 Portal Multiverso dos Super-Heróis</h1>
-    <p>Selecione um herói abaixo para conhecer seus poderes e história:</p>
+    <!-- Logo do Morcego Estilizada -->
+    <div class="bat-logo-container">
+        <div class="bat-logo"></div>
+    </div>
 
-    <!-- ATENÇÃO ALUNOS: Vocês devem adicionar o link do seu herói DENTRO desta lista <ul> abaixo -->
+    <h1>🦇 Portal Multiverso dos Super-Heróis</h1>
+    <p class="subtitle">Conheça o Cavaleiro da Febre do Rato de Gotham City:</p>
+
+    <!-- Bloco com mais informações sobre o Batman -->
+    <div class="batman-info">
+        <h3>Perfil do Herói</h3>
+        <p><strong>Nome Real:</strong> Bruce Wayne</p>
+        <p><strong>Cidade:</strong> Gotham City</p>
+        <p><strong>Habilidades Principais:</strong></p>
+        <ul>
+            <li>Mestre em artes marciais e combate corpo a corpo</li>
+            <li>Intelecto de nível genial e maior detetive do mundo</li>
+            <li>Uso de equipamentos de alta tecnologia (Batarangs, Batmóvel, Batcaverna)</li>
+            <li>Ausência de superpoderes, compensados por preparo físico extremo e estratégia</li>
+        </ul>
+    </div>
+
+    <!-- Lista de Links Original Modificada -->
     <ul id="lista-herois">
         <!-- O conflito vai acontecer aqui quando todos tentarem colar suas linhas ao mesmo tempo -->
+        <li><a href="https://pt.wikipedia.org/wiki/Batman" target="_blank">Batman: O Cavaleiro das Trevas (História e Habilidades)</a></li>
         <!-- cwJrhhJYf83rVVhrih30qi7bSrLNOr0wOSO  -->
     </ul>
 
