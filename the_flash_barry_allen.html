@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Flash - Barry Allen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #b30000, #ff1a1a);
+            text-align: center;
+            padding: 35px 20px;
+            border-bottom: 5px solid #ffd000;
+        }
+
+        header h1 {
+            font-size: 55px;
+            text-transform: uppercase;
+            text-shadow: 4px 4px #500000;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #ffe600;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #151515;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd000;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+
+            background:
+                linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
+                url("https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            color: #ff2020;
+            text-shadow: 3px 3px #ffd000;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            color: #ff2525;
+            font-size: 35px;
+            margin-bottom: 25px;
+            border-left: 8px solid #ffd000;
+            padding-left: 15px;
+        }
+
+        .sobre {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .sobre img {
+            width: 350px;
+            max-width: 100%;
+            border-radius: 15px;
+            border: 4px solid #ff2020;
+            box-shadow: 0 0 25px rgba(255, 0, 0, .5);
+        }
+
+        .sobre-texto {
+            flex: 1;
+            min-width: 280px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #181818;
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 5px solid #ff2020;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, .3);
+        }
+
+        .card h3 {
+            color: #ffd000;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .curiosidades li {
+            background: #181818;
+            margin: 12px 0;
+            padding: 18px;
+            border-left: 5px solid #ffd000;
+            list-style: none;
+            line-height: 1.6;
+        }
+
+        .curiosidades li::before {
+            content: "⚡ ";
+            color: #ffd000;
+            font-size: 20px;
+        }
+
+        .frase {
+            text-align: center;
+            background: linear-gradient(135deg, #9e0000, #e00000);
+            padding: 40px;
+            border-radius: 15px;
+            font-size: 27px;
+            font-weight: bold;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(255, 0, 0, .3);
+        }
+
+        footer {
+            background: #050505;
+            text-align: center;
+            padding: 30px;
+            border-top: 3px solid #ff2020;
+            color: #aaa;
+        }
+
+        footer span {
+            color: #ffd000;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 40px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>⚡ THE FLASH ⚡</h1>
+        <p>Barry Allen — O Homem Mais Rápido do Mundo</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#poderes">Poderes</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#curiosidades">Curiosidades</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>BARRY ALLEN</h2>
+            <p>
+                Um cientista forense de Central City que se tornou
+                um dos maiores heróis do Universo DC.
+            </p>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <section id="sobre">
+            <h2>Quem é Barry Allen?</h2>
+
+            <div class="sobre">
+
+                <img
+                    src="https://static.dc.com/dc/files/default_images/Char_Thumb_Flash_5c5c3b7d1a.jpg"
+                    alt="The Flash">
+
+                <div class="sobre-texto">
+                    <p>
+                        Barry Allen é um cientista forense de Central City
+                        e uma das pessoas que assumiram o manto do Flash.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Nos quadrinhos, Barry estreou em
+                        <strong>Showcase #4, em 1956</strong>, tornando-se
+                        uma das figuras mais importantes da Era de Prata
+                        dos quadrinhos.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Seus poderes estão ligados à
+                        <strong>Força de Aceleração (Speed Force)</strong>,
+                        uma fonte de energia associada aos velocistas
+                        do Universo DC.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="poderes">
+            <h2>⚡ Poderes</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Supervelocidade</h3>
+                    <p>
+                        Barry consegue se mover em velocidades
+                        extraordinárias, muito superiores às de uma
+                        pessoa comum.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Intangibilidade</h3>
+                    <p>
+                        Ele pode vibrar seu corpo em frequências
+                        extremamente rápidas, permitindo atravessar
+                        determinados objetos sólidos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Viagem no Tempo</h3>
+                    <p>
+                        Sua conexão com a Força de Aceleração permite
+                        que Barry atravesse diferentes períodos do tempo.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Agilidade</h3>
+                    <p>
+                        Seus reflexos e sua capacidade de reação são
+                        extraordinários, acompanhando sua velocidade.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Raios</h3>
+                    <p>
+                        O Flash pode criar e manipular energia elétrica
+                        e raios associados à sua velocidade.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Força de Aceleração</h3>
+                    <p>
+                        A Speed Force é uma fonte de energia fundamental
+                        para os poderes dos velocistas.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="caracteristicas">
+            <h2>🦸 Características</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Nome</h3>
+                    <p>Barry Allen</p>
+                </div>
+
+                <div class="card">
+                    <h3>Alter Ego</h3>
+                    <p>The Flash</p>
+                </div>
+
+                <div class="card">
+                    <h3>Profissão</h3>
+                    <p>Cientista forense</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cidade</h3>
+                    <p>Central City</p>
+                </div>
+
+                <div class="card">
+                    <h3>Apelido</h3>
+                    <p>Scarlet Speedster</p>
+                </div>
+
+                <div class="card">
+                    <h3>Universo</h3>
+                    <p>DC Comics</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="curiosidades" class="curiosidades">
+            <h2>⚡ Curiosidades</h2>
+
+            <ul>
+                <li>
+                    Barry Allen estreou nos quadrinhos em
+                    <strong>Showcase #4 (1956)</strong>.
+                </li>
+
+                <li>
+                    Barry é o segundo personagem a usar o nome Flash,
+                    depois de Jay Garrick.
+                </li>
+
+                <li>
+                    A Força de Aceleração está diretamente relacionada
+                    aos poderes de vários velocistas do Universo DC.
+                </li>
+
+                <li>
+                    Barry Allen possui uma forte ligação com histórias
+                    envolvendo viagens no tempo e diferentes universos.
+                </li>
+
+                <li>
+                    Um dos seus maiores inimigos é
+                    <strong>Reverse-Flash (Eobard Thawne)</strong>.
+                </li>
+
+                <li>
+                    O Flash também é conhecido pelo título
+                    <strong>"The Fastest Man Alive"</strong>.
+                </li>
+            </ul>
+        </section>
+
+
+        <section>
+            <div class="frase">
+                ⚡ "A velocidade é apenas o começo." ⚡
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Página educativa sobre <span>Barry Allen / The Flash</span>.
+        </p>
+
+        <p>
+            Personagem pertencente à DC Comics.
+        </p>
+    </footer>
+
+</body>
+</html>
