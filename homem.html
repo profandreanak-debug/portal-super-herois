@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Homem-Aranha</title>
+    <style>
+        body {
+            background-color: rgba(255, 0, 0, 0.792);
+            background-image: radial-gradient(black 1px, transparent 1px);
+            background-size: 40px 40px;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 40px;
+        }
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+        .info {
+            flex: 1;
+            margin-left: 40px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px black;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "🕷️ ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Homem-Aranha</h1>
+    <div class="container">
+        <div class="image">
+            <img src="homem_aranha.jpg" alt="Homem-Aranha">
+        </div>
+        <div class="info">
+            <h2>Características</h2>
+            <ul>
+                <li>Nome verdadeiro: Peter Parker</li>
+                <li>Habilidades: força sobre-humana, agilidade, reflexos rápidos</li>
+                <li>Sentido Aranha: percepção de perigo</li>
+                <li>Equipamento: lançadores de teia criados por ele</li>
+                <li>Personalidade: corajoso, altruísta e com senso de humor</li>
+                <li>Principais inimigos: Duende Verde, Doutor Octopus, Venom</li>
+                <li>Aliados: Vingadores, Quarteto Fantástico</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
