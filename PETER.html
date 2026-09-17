@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Herói</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #111, #4b0000);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heroi {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .titulo {
+            font-size: 42px;
+            color: #ff3333;
+            text-shadow: 0 0 15px #ff0000;
+            margin-bottom: 30px;
+        }
+
+        .personagem {
+            position: relative;
+            width: 220px;
+            height: 430px;
+            margin: auto;
+        }
+
+        /* Cabeça */
+        .cabeca {
+            width: 90px;
+            height: 105px;
+            background: #f5d0b5;
+            border-radius: 45% 45% 50% 50%;
+            position: absolute;
+            top: 20px;
+            left: 65px;
+            z-index: 2;
+        }
+
+        /* Cabelo preto */
+        .cabelo {
+            width: 95px;
+            height: 50px;
+            background: #111;
+            border-radius: 50% 50% 20% 20%;
+            position: absolute;
+            top: 10px;
+            left: 62px;
+            z-index: 3;
+        }
+
+        /* Corpo */
+        .corpo {
+            width: 130px;
+            height: 190px;
+            background: #c40000;
+            border-radius: 35px 35px 20px 20px;
+            position: absolute;
+            top: 115px;
+            left: 45px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        /* Símbolo */
+        .simbolo {
+            position: absolute;
+            top: 35px;
+            left: 42px;
+            font-size: 45px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        /* Braços */
+        .braco {
+            width: 45px;
+            height: 145px;
+            background: #c40000;
+            border-radius: 30px;
+            position: absolute;
+            top: 125px;
+        }
+
+        .braco.esquerdo {
+            left: 5px;
+            transform: rotate(25
