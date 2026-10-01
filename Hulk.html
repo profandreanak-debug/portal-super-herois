@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Incrível Hulk</title>
+    <style>
+        /* Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #a32cc4, #2a0845);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #4a9e2d;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #4a9e2d;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 0px #000;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            font-style: italic;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Seções */
+        section {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid #4a9e2d;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #a32cc4;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #cccccc;
+            font-size: 1.1rem;
+        }
+
+        /* Lista de Poderes */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            background: #2a2a2a;
+            margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 4px;
+            border-left: 3px solid #a32cc4;
+            transition: transform 0.2s;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            background: #333;
+        }
+
+        li strong {
+            color: #4a9e2d;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a0a;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 60px;
+            border-top: 1px solid #222;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>O Incrível Hulk</h1>
+        <p>"Quanto mais bravo o Hulk fica, mais forte o Hulk fica!"</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="origem">
+            <h2>Origem</h2>
+            <p>O Hulk é o alter ego do <strong>Dr. Robert Bruce Banner</strong>, um cientista brilhante mas socialmente retraído. Durante o teste de uma bomba de radiação gama de sua própria invenção, Banner correu para o campo de testes para salvar um adolescente que havia invadido a área.</p>
+            <p>Ao fazer isso, ele foi totalmente exposto à explosão e absorveu uma quantidade massiva de radiação gama. Em vez de morrer, a radiação alterou sua estrutura de DNA, fazendo com que ele se transformasse em um monstro gigante de pele verde sempre que perde o controle de suas emoções, especialmente a raiva.</p>
+        </section>
+
+        <section id="poderes">
+            <h2>Poderes e Habilidades</h2>
+            <ul>
+                <li><strong>Força Física Ilimitada:</strong> Sua força não tem um limite conhecido e aumenta diretamente com o seu nível de fúria.</li>
+                <li><strong>Super Resistência:</strong> Pele virtualmente impenetrável, capaz de resistir a explosões nucleares e impactos de armas de fogo de alto calibre.</li>
+                <li><strong>Fator de Cura Acelerado:</strong> Regenera tecidos e órgãos danificados quase instantaneamente, sendo imune a todas as doenças terrestres.</li>
+                <li><strong>Super Salto:</strong> Capaz de saltar milhas de distância com um único impulso, cobrindo continentes inteiros rapidamente.</li>
+            </ul>
+        </section>
+
+        <section id="curiosidade">
+            <h2>Curiosidade</h2>
+            <p>Em sua primeira aparição nos quadrinhos (<em>The Incredible Hulk #1</em>, em 1962), criada por Stan Lee e Jack Kirby, <strong>o Hulk era cinza</strong>. Devido a problemas de consistência na impressão gráfica da época, a cor cinza variava de página para página. Para resolver o problema técnico, Stan Lee decidiu mudar a cor do personagem para verde na edição seguinte.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Página de Fã do Hulk. Criado para fins demonstrativos.</p>
+    </footer>
+
+</body>
+</html>
