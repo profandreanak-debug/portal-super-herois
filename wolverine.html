@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Super-Herói - Wolverine</title>
+    <style>
+        /* Animação de Fade-In */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Configurações Gerais */
+        html {
+            scroll-behavior: smooth; /* Scroll suave ao clicar no menu */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a; /* Preto profundo */
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Barra de Navegação (Header) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(13, 13, 13, 0.95);
+            border-bottom: 3px solid #ffcc00; /* Amarelo Wolverine */
+            box-shadow: 0 4px 20px rgba(255, 204, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffcc00;
+        }
+
+        .logo span {
+            color: #0055ff; /* Azul Wolverine */
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Container Principal com Efeito Fade-In */
+        main {
+            max-width: 900px;
+            margin: 120px auto 60px auto; /* Espaço para não sumir atrás do header */
+            padding: 0 20px;
+            animation: fadeIn 1.2s ease-out forwards; /* Aplica o efeito de entrada */
+        }
+
+        /* Seção Principal (Hero Card Adaptado) */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.8), rgba(10, 10, 10, 0.9));
+            border: 2px solid #ffcc00;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 204, 0, 0.15);
+            margin-bottom: 40px;
+            transition: box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+
+        .hero-section:hover {
+            border-color: #0055ff;
+            box-shadow: 0 0 35px rgba(0, 85, 255, 0.4);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Imagem */
+        .hero-image-container {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 0 auto 30px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .hero-section:hover .hero-image-container img {
+            transform: scale(1.03);
+        }
+
+        /* Seções de Conteúdo (Scroll) */
+        .content-section {
+            background-color: #121212;
+            border-left: 5px solid #0055ff; /* Detalhe em azul */
+            border-radius: 0 15px 15px 0;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        /* Alternando as cores das bordas para usar o amarelo também */
+        .content-section.alt-border {
+            border-left-color: #ffcc00;
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            color: #ffcc00;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content-section.alt-border h2 {
+            color: #0055ff;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.03);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-box strong {
+            color: #ffcc00;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação Superior -->
+    <header>
+        <div class="logo">Portal <span>Super-Herói</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#info">Identidade</a>
+            <a href="#origem">Origem</a>
+            <a href="#poderes">Poderes</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal do Site -->
+    <main>
+        
+        <!-- Seção Inicial (O Card Principal) -->
+        <section id="inicio" class="hero-section">
+            <h1 class="hero-title">Wolverine</h1>
+            
+            <div class="hero-image-container">
+                <!-- LEMBRETE: Mude o nome abaixo para o nome da sua foto salva na pasta (ex: wolverine.jpg) -->
+                <img src="wolverine.webp" alt="Wolverine em ação">
+            </div>
+
+            <p style="font-size: 1.2rem; color: #ddd; max-width: 700px; margin: 0 auto;">
+                Um dos heróis mais implacáveis e amados do universo dos quadrinhos. Conheça a história, os segredos e as habilidades do mutante conhecido como Logan.
+            </p>
+        </section>
+
+        <!-- Seção: Ficha Técnica / Identidade -->
+        <section id="info" class="content-section">
+            <h2>Ficha Técnica</h2>
+            <div class="info-grid">
+                <div class="info-box">
+                    <strong>Nome Completo</strong>
+                    James Howlett
+                </div>
+                <div class="info-box">
+                    <strong>Codinome</strong>
+                    Logan / Wolverine
+                </div>
+                <div class="info-box">
+                    <strong>Afiliações</strong>
+                    X-Men, Vingadores, Arma X
+                </div>
+                <div class="info-box">
+                    <strong>Criadores</strong>
+                    Roy Thomas, Len Wein e John Romita Sr.
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Origem -->
+        <section id="origem" class="content-section alt-border">
+            <h2>Origem do Herói</h2>
+            <p>
+                Nascido no Canadá no final do século XIX, James Howlett descobriu seus poderes mutantes ainda na infância após um evento traumático. Durante anos, ele viveu sob o nome de <strong>Logan</strong>, vagando pelo mundo e lutando em diversas guerras devido à sua longevidade.
+            </p>
+            <p>
+                Seu destino mudou para sempre quando ele foi capturado pelo projeto militar secreto <strong>Arma X</strong>. Lá, cientistas revestiram todo o seu esqueleto com o metal indestrutível <strong>Adamantium</strong>, transformando-o em uma arma viva perfeita. Mais tarde, ele encontrou um propósito ao se juntar aos X-Men do Professor Charles Xavier.
+            </p>
+        </section>
+
+        <!-- Seção: Poderes -->
+        <section id="poderes" class="content-section">
+            <h2>Poderes & Habilidades</h2>
+            <ul>
+                <li><strong>Fator de Cura Acelerado:</strong> Capacidade de regenerar tecidos corporais, curar ferimentos em segundos e resistir a doenças ou venenos.</li>
+                <li><strong>Garras de Adamantium:</strong> Três garras retráteis em cada antebraço que cortam praticamente qualquer substância existente.</li>
+                <li><strong>Sentidos Aguçados:</strong> Visão, audição e olfato super-humanos, permitindo rastrear alvos a quilômetros de distância.</li>
+                <li><strong>Mestre em Combate:</strong> Décadas de experiência militar e treinamento em artes marciais ao redor do mundo.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Portal de Super-Heróis. Projeto de estudos Git/GitHub.</p>
+    </footer>
+
+</body>
+</html>
